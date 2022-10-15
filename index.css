@@ -1,0 +1,12 @@
+.header {
+    padding: 20px;
+    text-align: center;
+    font-family: fantasy;
+    font-weight: 500;
+    font-size: medium;
+}
+
+.image {
+    padding: auto;
+    text-align: center;
+}
