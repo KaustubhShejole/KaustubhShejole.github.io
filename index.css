@@ -4,32 +4,38 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
 }
 
 header {
     background-color: #333;
     color: #fff;
     padding: 20px;
+    text-align: center;
 }
 
 header h1 {
     margin: 0;
+    font-size: 28px;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 18px;
 }
 
 main {
@@ -37,7 +43,24 @@ main {
 }
 
 section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+section p {
     margin-bottom: 20px;
+}
+
+section ul {
+    padding-left: 20px;
 }
 
 footer {
@@ -48,37 +71,14 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-size: 14px;
 }
 
 /* Styles for specific sections */
 
-section h2 {
-    color: #333;
-}
-
-section ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-section p {
-    margin-bottom: 10px;
-}
-
 #github,
 #linkedin {
-    margin-top: 20px;
-}
-
-#github h2,
-#linkedin h2 {
-    color: #333;
-    margin-bottom: 10px;
-}
-
-#github p,
-#linkedin p {
-    margin: 0;
+    text-align: center;
 }
 
 #github a,
