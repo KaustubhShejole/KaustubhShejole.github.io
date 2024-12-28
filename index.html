@@ -1,43 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Profile</title>
-<style>
-    .container {
-        display: flex;
-        flex-direction: row;
-        height: 100vh;
-    }
-    .left {
-        flex: 30%;
-        background-color: #f0f0f0;
-        padding: 20px;
-    }
-    .right {
-        flex: 70%;
-        background-color: #ffffff;
-        padding: 20px;
-    }
-</style>
-</head>
-<body>
 
-<div class="container">
-    <div class="left">
-        <p>Kaustubh Shivshankar Shejole</p>
-        <p>Email: sshejole132@gmail.com</p>
-        <p>GATE CS IT AIR 606</p>
-        <p><a href="https://www.linkedin.com/in/kaustubh-shivshankar-shejole-228113302/">LinkedIn</a></p>
-        <p><a href="https://github.com/KaustubhShejole">GitHub</a></p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaustubh Shivshankar Shejole</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, lavenderblush ,lavender);
+            /* Background Gradient */
+        }
+
+        #start_intro {
+            text-align: right;
+            background-image: url('images/Risingsun.jpg');
+            background-size:cover; /* Ensures the image covers the entire background */
+            background-position: center; /* Centers the background image */
+            background-repeat: no-repeat; /* Prevents the background image from repeating */
+        }
+        .profile-image{
+            text-align: left;
+            padding:24px;
+        }
+        .profile-image img {
+
+            width:200px;
+            height: auto;
+            border: 6px;
+            border-radius: 50%;
+        }
+
+        .profile-info {
+            margin-top: 20px;
+            font-family: fantasy;
+        }
+
+        .profile-info b {
+            font-family: cursive;
+            font-size: large;
+            color:palegoldenrod;
+        }
+
+        .profile-info i {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .profile-info a {
+            color: palegoldenrod;
+            text-decoration: none;
+        }
+
+        .profile-info a:hover {
+            text-decoration: underline;
+        }
+
+        #current_status {
+            display: flex;
+                                flex-direction: column;
+            width: 80%;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            /* Slightly transparent background for readability */
+            text-align: center;
+            box-shadow: 1px 2px 4px gray;
+            border-radius: 6px;
+        }
+        #previous_btech {
+            padding: 30px;
+        }
+        .link a{
+            color:lightgoldenrodyellow;
+            font-weight: 500;
+            text-decoration: underline;
+        }
+        .outer_contain{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            margin: 6px;
+            padding:6px;
+        }
+
+        .outer_contain1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 6px;
+            padding:6px;
+        }
+                /* Responsive layout - makes a one column layout instead of a two-column layout */
+
+        @media (max-width: 900px) {
+        .outer_contain {
+            flex-direction: column;
+        }
+        .profile-image img {
+            width:150px;
+            height: auto;
+            border: 2px;
+            border-radius: 50%;
+        }
+        .profile-image{
+            padding: 6px;
+        }
+        }
+        .container1{
+            flex:1;
+            padding: 6px;
+            margin: 6px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="start_intro">
+        <div class="profile-image">
+            <img src="images/Kaustubh_Photo.jpg" alt="Kaustubh Shivshankar Shejole">
+        </div>
+        <div>
+            <!-- Profile Image -->
+            <!-- Profile Details -->
+            <div style="margin-bottom: 30px;padding:30px;">
+                <div>
+                    <b style="color: aqua;font-size: larger;">Kaustubh Shivshankar Shejole</b><br>
+                    <i style="font-family: 'Courier New', Courier, monospace; color: yellow;">Student pursuing
+                        <span class="link"><a
+                            href="https://www.cse.iitb.ac.in/#/admissions/pg/ms">MS By Research</a></span></i>
+                    <div class="link"><a href="http://www.cse.iitb.ac.in">Dept. of Computer Science and Engineering</a></div>
+                    <div class="link"><a href="http://www.iitb.ac.in">IIT Bombay</a></div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="right">
-        <p>I am currently in the 8th semester pursuing a Bachelor of Technology (BTech) in Computer Science and Engineering at Visvesvaraya National Institute of Technology (VNIT), Nagpur, with a CGPA of 8.15, and I have a keen interest in the technological fields of intelligent systems such as Natural Language Processing, Computer Vision, Deep Learning, AI, and Machine Learning.</p>
-        <p>POR: Junior Prefect: I held the responsibility of overseeing the maintenance and discipline in the first-year hostels and mess, where I provided mentorship to first-year boys, offering support such as arranging hospital assistance and conducting tutorial classes on programming.</p>
-        <p>Senior Prefect: I held the same responsibilities as that of Junior Prefect. I with my junior developed fingerprint biometrics based attendance system for first year hostels.</p>
+    <div class="container" style="margin-top: 10px;text-align: center;">
+        <i>Amidst the wave of automation, let us not lose sight of the essence of humanity. Technology can enhance efficiency,
+        but
+        only human touch can foster genuine connections and inspire.</i>
     </div>
-</div>
+    <div class="outer_contain1">
+        <div id="current_status" class="container" style="margin-top: 60px;">
+            <p>Currently, I am enrolled in MS By Research in the Department of Computer Science and Engineering. <br>
+                I am Teaching Assistant for the following course for Autumn 2024:
+                <a href="https://www.cse.iitb.ac.in/~cs101/"><b>CS101: Computer Programming and Utilization</b></a>
+            </p>
+
+
+
+            <p>I am fortunate to work under the guidance of
+                        <a href="https://www.cse.iitb.ac.in/~pb/"><b>Prof. Pushpak Bhattacharyya</b></a>. <br>
+                        I am currently doing research about <i>Bias and Stereotypes and their relationship with LLMs <i>.
+            </p>
+        </div>
+
+    <div class="outer_contain">
+        <div id="previous_btech" class="container1">
+            <b>BTech:</b>
+            <p>I completed my BTech in Computer Science and Engineering from Visvesvaraya National Institute of Technology (<a
+                    href="https://www.vnit.ac.in">VNIT, Nagpur</a>) with CGPA of 8.27.
+                <br>
+                                <div>
+                                        <a href="life_before_iitb.html">My Life at VNIT, Nagpur</a>
+                                </div>
+            </p>
+        </div>
+        <div id="academic_interests" class="container1">
+            <b>Academic Interests:</b>
+            <p>The complete field of Computer Science fascinates me, but there are some fields that comparatively attracted me
+                more towards them. These are as follows: </p>
+            <ol>
+                <li>Artificial Intelligence</li>
+                <li>Machine Learning</li>
+                <li>Natural Language and Speech Processing</li>
+                <li>Image and Video Processing</li>
+            </ol>
+            <p>I am also deeply interested in the underlying mathematical formulations in the concepts of Computer Science.</p>
+        </div>
+
+        <div id="life_at_iitb" class="container1">
+            <b>My life at IITB: </b><br>
+            <a href="life_at_iitb.html">Me at IITB</a>
+        </div>
+
+
+    </div>
+    <div style="display:flex;height:  100px;background-color: darkviolet;color: aliceblue; text-transform: uppercase;justify-content: center; align-items: center;">
+        <strong>THANK you</strong>
+    </div>
 
 </body>
+
 </html>
